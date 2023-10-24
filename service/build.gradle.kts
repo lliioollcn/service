@@ -6,11 +6,11 @@ plugins {
 
 android {
     namespace = "io.github.libxposed.service"
-    compileSdk = 33
-    buildToolsVersion = "33.0.1"
+    compileSdk = 34
+    buildToolsVersion = "34.0.0"
 
     defaultConfig {
-        minSdk = 21
+        minSdk = 24
     }
 
     buildFeatures {
@@ -19,9 +19,8 @@ android {
     }
 
     compileOptions {
-        isCoreLibraryDesugaringEnabled = true
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
 
     publishing {
@@ -34,8 +33,7 @@ android {
 
 dependencies {
     implementation(project(":interface"))
-    compileOnly("androidx.annotation:annotation:1.6.0")
-    coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.0.3")
+    compileOnly("androidx.annotation:annotation:1.7.0")
 }
 
 publishing {
