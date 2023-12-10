@@ -11,7 +11,7 @@ repositories {
     maven { url = uri("https://www.jitpack.io") }
 }
 dependencies {
-    implementation("com.github.lliioollcn:api:100-1.0.0")
+    implementation("com.github.lliioollcn:service:100-1.0.0")
 }
 
 ```
